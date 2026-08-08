@@ -1,53 +1,79 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>About Me</h1>
-</header>
+    <header>
+        <h1>About Me</h1>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<main>
+    <main>
 
-    <section>
-        <h2>Who I Am</h2>
+        <section>
+            <h2>Who I Am</h2>
 
-        <p>My name is Karem. I am a Computer Science major with a minor in Cybersecurity.</p>
+            <p>
+                My name is Karem. I am a Computer Science major
+                with a minor in Cybersecurity.
+            </p>
 
-        <p>I enjoy learning about programming, technology, and protecting computer systems.</p>
-    </section>
+            <p>
+                I enjoy learning about programming, technology,
+                and protecting computer systems.
+            </p>
 
-    <section>
-        <h2>My Skills</h2>
+            <button id="infoButton">Learn More</button>
 
-        <ul>
-            <li>HTML</li>
-            <li>Python Programming</li>
-            <li>Cybersecurity</li>
-        </ul>
+            <p id="extraInfo" style="display: none;">
+                I am interested in developing my programming skills
+                and learning more about cybersecurity and how
+                technology can be used to solve problems.
+            </p>
+        </section>
 
-        <img src="images/coding.jpg" alt="Programming code">
-    </section>
+        <section>
+            <h2>My Skills</h2>
 
-</main>
+            <ul>
+                <li>HTML</li>
+                <li>Python Programming</li>
+                <li>Cybersecurity</li>
+            </ul>
 
-<footer>
-    <p>&copy; 2026 Karem. All rights reserved.</p>
-</footer>
+            <img
+                src="images/coding.jpg"
+                alt="Programming code">
+
+            <button id="welcomeButton">Click for a Message</button>
+
+            <p id="welcomeMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Karem. All Rights Reserved.</p>
+    </footer>
 
 </body>
 
 </html>
+```
+

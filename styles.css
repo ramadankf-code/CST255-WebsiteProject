@@ -93,6 +93,95 @@ iframe {
     max-width: 100%;
 }
 
+/* JavaScript buttons */
+
+button {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* JavaScript messages */
+
+#welcomeMessage,
+#contactMessage,
+#formMessage {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Contact form */
+
+#contactForm {
+    background-color: #f7faff;
+    border: 2px solid #0055a5;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* Contact form labels */
+
+#contactForm label {
+    display: block;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+/* Contact form fields */
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Textarea */
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Form field focus */
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #0055a5;
+    box-shadow: 0 0 4px rgba(0, 85, 165, 0.3);
+}
+
+/* Form submit button */
+
+#contactForm button {
+    margin-top: 20px;
+    background-color: #003366;
+}
+
+#contactForm button:hover {
+    background-color: #0055a5;
+}
+
 /* Footer */
 
 footer {

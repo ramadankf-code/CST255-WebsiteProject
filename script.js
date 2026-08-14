@@ -61,4 +61,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+
+    // Contact form: Check that the message is at least 10 characters
+    const contactForm = document.getElementById("contactForm");
+    const message = document.getElementById("message");
+    const formMessage = document.getElementById("formMessage");
+
+    if (contactForm && message && formMessage) {
+        contactForm.addEventListener("submit", function (event) {
+
+            if (message.value.trim().length < 10) {
+                event.preventDefault();
+
+                formMessage.textContent =
+                    "Your message must be at least 10 characters long.";
+            } else {
+                formMessage.textContent =
+                    "Thank you! Your message is ready to be submitted.";
+            }
+
+        });
+    }
+
 });

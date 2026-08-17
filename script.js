@@ -19,6 +19,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    // Home page: Show or hide additional details
+    const detailsButton = document.getElementById("detailsButton");
+    const extraDetails = document.getElementById("extraDetails");
+
+    if (detailsButton && extraDetails) {
+        detailsButton.addEventListener("click", function () {
+
+            if (extraDetails.style.display === "none") {
+                extraDetails.style.display = "block";
+                detailsButton.textContent = "Show Less";
+            } else {
+                extraDetails.style.display = "none";
+                detailsButton.textContent = "Show More";
+            }
+
+        });
+    }
+
+
     // About page: Show or hide information
     const infoButton = document.getElementById("infoButton");
     const extraInfo = document.getElementById("extraInfo");
